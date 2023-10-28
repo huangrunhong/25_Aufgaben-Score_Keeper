@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Vertiefung: Projekt Score Keeper</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="home">
+        <div class="grunFrame">
+          <h1 id="scoreHome">0</h1>
+          <p class="homeTitle">Home</p>
+        </div>
+        <form class="homeInput">
+          <input type="button" value="+1" onclick="scoreAddHome(1)" />
+          <input type="button" value="+2" onclick="scoreAddHome(2)" />
+          <input type="button" value="+3" onclick="scoreAddHome(3)" />
+        </form>
+      </div>
+      <div class="away">
+        <div class="blueFrame">
+          <h1 id="scoreAway">0</h1>
+          <p class="awayTitle">Away</p>
+        </div>
+        <form class="awayInput">
+          <input type="button" value="+1" onclick="scoreAddAway(1)" />
+          <input type="button" value="+2" onclick="scoreAddAway(2)" />
+          <input type="button" value="+3" onclick="scoreAddAway(3)" />
+        </form>
+      </div>
+    </section>
+    <button onclick="scoreReset()">Reset</button>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

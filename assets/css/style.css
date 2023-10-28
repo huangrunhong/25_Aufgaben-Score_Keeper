@@ -1,0 +1,112 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Orbitron;
+  src: url(../fonts/Orbitron-Regular.ttf);
+}
+@font-face {
+  font-family: Lato;
+  src: url(../fonts/Lato-Regular.ttf);
+}
+h1 {
+  font-family: Orbitron;
+  font-size: 130px;
+  color: #fdf860;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: black;
+  border-radius: 20px;
+  margin: 30px 30px;
+}
+body {
+  margin: 0 auto;
+  background-color: rgb(43, 43, 43);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section {
+  margin: 5rem auto 0 auto;
+  display: flex;
+}
+
+.home,
+.away {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-inline: 45px;
+}
+
+.grunFrame,
+.blueFrame {
+  width: 430px;
+  max-height: 430px;
+  border-radius: 30px;
+}
+.grunFrame {
+  border: 5px solid #97f5bb;
+  position: relative;
+}
+
+p {
+  font-size: 30px;
+  font-family: Orbitron;
+  color: white;
+  padding-inline: 1rem;
+  background-color: rgb(43, 43, 43);
+  text-align: center;
+}
+.homeTitle {
+  position: absolute;
+  left: 144px;
+  bottom: -20px;
+}
+
+.blueFrame {
+  border: 5px solid #525df4;
+  position: relative;
+}
+.awayTitle {
+  position: absolute;
+  left: 144px;
+  bottom: -20px;
+}
+
+form {
+  margin-top: 100px;
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  padding: 30px 30px;
+  border-radius: 20px;
+  border: none;
+  font-family: Lato;
+  font-size: 30px;
+  color: white;
+}
+
+.homeInput > input {
+  background-color: #97f5bb;
+}
+
+.awayInput > input {
+  background-color: #525df4;
+}
+
+button {
+  margin-top: 60px;
+  margin-bottom: 100px;
+  padding: 10px 40px;
+  border: none;
+  border-radius: 10px;
+  font-family: Lato;
+  font-size: 15px;
+}
